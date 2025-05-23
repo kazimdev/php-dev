@@ -78,5 +78,4 @@ switch($color){
 
     default:
         echo "Transparent";
-
 }
