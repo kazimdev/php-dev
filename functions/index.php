@@ -29,20 +29,20 @@
 // add(1.3, 2.5);
 
 
-function addMultiples(...$x)
-{
-    // echo "<pre>";
-    // print_r($x);
+// function addMultiples(...$x)
+// {
+//     // echo "<pre>";
+//     // print_r($x);
 
-    $sum = 0;
+//     $sum = 0;
 
-    foreach ($x as $value) {
-        $sum += $value;
-    }
+//     foreach ($x as $value) {
+//         $sum += $value;
+//     }
 
-    return $sum;
-}
+//     return $sum;
+// }
 
-$my_sum = addMultiples(1, 3, 4, 7, 20, 34, 20, 39);
+// $my_sum = addMultiples(1, 3, 4, 7, 20, 34, 20, 39);
 
-echo $my_sum;
+// echo $my_sum;
