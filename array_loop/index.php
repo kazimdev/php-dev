@@ -2,7 +2,7 @@
 
 $my_arr = array("Mosharof", 90, "Halim", true, false); // Indexed
 
-// Multidimensional array 
+// Multidimensional Array
 $persons = array(  
     array( // Associative array
         'id' => "asdfdfasdfdf4343",
