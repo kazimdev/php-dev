@@ -1,0 +1,62 @@
+1. Simple Contact Form Processor
+Description: A form with name, email, and message fields. After submission, display the data back (no saving).
+
+Concepts Used:
+
+Superglobals ($_POST)
+
+Conditions (empty field check)
+
+Functions for sanitizing input
+
+
+
+2. Multiplication Table Generator
+Description: User enters a number, and the app prints the multiplication table (e.g., 2×1 to 2×10).
+
+Concepts Used:
+
+Loops (for)
+
+Superglobals ($_POST)
+
+
+
+3. Grade Calculator
+Description: Enter marks for 3-5 subjects, calculate total and average, and return a grade (A, B, C, etc.).
+
+Concepts Used:
+
+Arrays
+
+Loops (foreach)
+
+Conditions
+
+Constants (e.g., grade thresholds)
+
+
+
+4. Currency Converter
+Description: Convert amount from USD to BDT, EUR, etc. using fixed rates stored in constants or arrays.
+
+Concepts Used:
+
+Constants
+
+Arrays
+
+Superglobals
+
+
+
+5. Simple Login Form (No DB)
+Description: Hardcode a username and password in PHP. Show login form. If match, say "Welcome", else "Invalid".
+
+Concepts Used:
+
+Superglobals ($_POST)
+
+Conditions
+
+Functions
