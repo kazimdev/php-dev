@@ -38,16 +38,21 @@ class Router
 
             call_user_func($action);
         } else if (is_array($action)) {
-
-            // print_r($action);
-
             $controllerClass = $action[0];
 
             if (strpos($controllerClass, '\\') === false) {
-                $controllerClass = "App\\Controllers\\$controllerClass";
+                if ($uri == '/register' || $uri == '/login') {
+                    $controllerClass = "App\\Controllers\\Auth\\$controllerClass";
+                } else {
+                    $controllerClass = "App\\Controllers\\$controllerClass";
+                }
             }
 
-            $controllerFile = __DIR__ . "/../Controllers/" . basename(str_replace('\\', '/', $controllerClass)) . ".php";
+            if ($uri == '/register' || $uri == '/login') {
+                $controllerFile = __DIR__ . "/../Controllers/Auth/" . basename(str_replace('\\', '/', $controllerClass)) . ".php";
+            } else {
+                $controllerFile = __DIR__ . "/../Controllers/" . basename(str_replace('\\', '/', $controllerClass)) . ".php";
+            }
 
             if (!file_exists($controllerFile)) {
                 http_response_code(500);

@@ -1,11 +1,14 @@
 <?php
 
 use App\Core\Router;
+use App\Controllers\Auth\RegisterController;
 
 // Router::get('/', [HomeController::class, 'index']);
 
-Router::get('/', 'HomeController@index');
+Router::get('/register', [RegisterController::class, 'index']);
+Router::post('/register', [RegisterController::class, 'store']);
 
+Router::get('/', 'HomeController@index');
 
 Router::get('/service', function () {
     echo '<h1>This is Service Page</h1>';
